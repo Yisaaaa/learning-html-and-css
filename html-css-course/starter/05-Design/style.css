@@ -27,6 +27,7 @@ FONT SIZE SYSTEM (px)
 body {
     font-family: "Inter", sans-serif;
     color: var(--grey);
+    border-bottom: 8px solid var(--main-color);
 }
 
 .container {
