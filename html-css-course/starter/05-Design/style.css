@@ -38,6 +38,7 @@ body {
 header,
 section {
     margin-bottom: 48px;
+    /* padding: 100px 0; */
 }
 
 h2 {
@@ -117,6 +118,7 @@ h1 {
 
 img {
     width: 100%;
+    border-radius: 12px;
 }
 
 /* FEATURES */
@@ -169,11 +171,12 @@ img {
 /* CHAIRS */
 .chair {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.273);
-    /* border-radius: 20px; */
+    border-radius: 12px;
 }
 
 .chair img {
-    /* border-radius: 20px; */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .chair-box {
