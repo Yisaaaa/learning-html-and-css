@@ -28,6 +28,7 @@ body {
     font-family: "Inter", sans-serif;
     color: var(--grey);
     border-bottom: 8px solid var(--main-color);
+    font-weight: 400;
 }
 
 .container {
@@ -37,7 +38,7 @@ body {
 
 header,
 section {
-    margin-bottom: 48px;
+    margin-bottom: 96px;
     /* padding: 100px 0; */
 }
 
@@ -95,7 +96,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
-    margin-top: 48px;
+    margin-top: 64px;
 }
 
 .header-text-box {
@@ -103,7 +104,7 @@ header {
 }
 
 h1 {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     font-size: 48.83px;
     line-height: 1.1;
     letter-spacing: -1px;
@@ -125,7 +126,7 @@ img {
 .features-icon {
     stroke: var(--main-color);
     width: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
 }
 
 .features-title {
@@ -163,9 +164,15 @@ img {
 
 .testimonial-text {
     font-style: italic;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     font-size: 18px;
     line-height: 1.7;
+    color: #e6fcf5;
+    font-weight: 500;
+}
+
+.testimonial-author {
+    color: #c3fae8;
 }
 
 /* CHAIRS */
@@ -180,7 +187,7 @@ img {
 }
 
 .chair-box {
-    padding: 24px;
+    padding: 32px;
 }
 
 h3 {
@@ -190,7 +197,7 @@ h3 {
 
 .chair-details {
     list-style: none;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 }
 
 .chair-details li {
@@ -212,7 +219,7 @@ h3 {
     align-items: center;
 }
 
-.chair footer {
+footer {
     margin-bottom: 48px;
     font-size: 12px;
     color: #495057;
