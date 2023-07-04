@@ -114,6 +114,28 @@
                 top: 50%;
                 transform: translate(50%, -50%);
             }
+
+            /* DOTS */
+            .dots {
+                display: flex;
+                gap: 12px;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                transform: translate(50%, 250%);
+            }
+
+            .dot {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                border: 3px solid var(--main-color);
+                background-color: white;
+            }
+
+            .dot--1 {
+                background-color: var(--main-color);
+            }
         </style>
     </head>
     <body>
@@ -161,6 +183,12 @@
                     />
                 </svg>
             </button>
+            <div class="dots">
+                <button class="dot dot--1"></button>
+                <button class="dot dot--2"></button>
+                <button class="dot dot--3"></button>
+                <button class="dot dot--4"></button>
+            </div>
         </div>
     </body>
 </html>
