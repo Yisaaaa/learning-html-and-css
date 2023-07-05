@@ -75,30 +75,23 @@
             }
 
             /* PAGES */
-            a {
+            a:link,
+            a:visited {
                 width: 32px;
                 height: 32px;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
-            a:link,
-            a:visited {
                 color: var(--grey);
                 text-decoration: none;
             }
 
             a:hover,
-            a:active {
+            a:active,
+            .page.current-page {
                 color: #f8f9fa;
                 background-color: var(--main-color);
-            }
-
-            .current-page:link,
-            .current-page:visited {
-                background-color: var(--main-color);
-                color: white;
             }
         </style>
     </head>
