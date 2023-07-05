@@ -36,15 +36,76 @@
                 font-family: "Inter", sans-serif;
                 color: var(--grey);
                 font-weight: 500;
+                display: flex;
+                justify-content: center;
             }
 
-            .table {
+            table {
                 width: 800px;
-                margin: 100px auto;
+                margin: 100px;
+                /* border: 2px solid var(--grey); */
+                border-collapse: collapse;
             }
+
+            td,
+            th {
+                /* border: 2px solid var(--grey); */
+                padding: 16px 24px;
+                text-align: left;
+                /* border-right: none; */
+            }
+
+            thead th {
+                background-color: var(--main-color);
+                color: white;
+                width: 25%;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #e9ecef;
+            }
+
+            /* th {
+                width: 25%;
+            } */
         </style>
     </head>
     <body>
-        <div class="table">Test</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chair</th>
+                    <th>The Laid Back</th>
+                    <th>The Worker Bee</th>
+                    <th>The Chair 4/2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Width</th>
+                    <td>80 cm</td>
+                    <td>60 cm</td>
+                    <td>220 cm</td>
+                </tr>
+                <tr>
+                    <th>Height</th>
+                    <td>100 cm</td>
+                    <td>110 cm</td>
+                    <td>90 cm</td>
+                </tr>
+                <tr>
+                    <th>Depth</th>
+                    <td>70 cm</td>
+                    <td>65 cm</td>
+                    <td>80 cm</td>
+                </tr>
+                <tr>
+                    <th>Weight</th>
+                    <td>16 kg</td>
+                    <td>22 kg</td>
+                    <td>80 kg</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
