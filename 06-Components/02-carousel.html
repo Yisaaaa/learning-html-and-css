@@ -54,8 +54,8 @@
                 display: flex;
                 gap: 84px;
                 /* align-items: center; */
-                padding: 36px;
-                padding-left: 86px;
+                padding: 36px 48px 36px 86px;
+                /* padding-left: 86px; */
                 position: relative;
             }
 
@@ -131,9 +131,10 @@
                 border-radius: 50%;
                 border: 3px solid var(--main-color);
                 background-color: white;
+                cursor: pointer;
             }
 
-            .dot--1 {
+            .dot--fill {
                 background-color: var(--main-color);
             }
         </style>
@@ -184,10 +185,10 @@
                 </svg>
             </button>
             <div class="dots">
-                <button class="dot dot--1"></button>
-                <button class="dot dot--2"></button>
-                <button class="dot dot--3"></button>
-                <button class="dot dot--4"></button>
+                <button class="dot dot--fill">&nbsp;</button>
+                <button class="dot">&nbsp;</button>
+                <button class="dot">&nbsp;</button>
+                <button class="dot">&nbsp;</button>
             </div>
         </div>
     </body>
