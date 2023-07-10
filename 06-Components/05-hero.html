@@ -12,7 +12,86 @@
             FONT SIZE SYSTEM (px)
             10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
             */
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)
+                    ),
+                    url(./hero.jpg);
+                background-size: cover;
+                font-family: sans-serif;
+                color: white;
+            }
+
+            .hero-section {
+                width: 75vw;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                gap: 200px;
+                justify-content: center;
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 48px;
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            .hero-section-text {
+                width: 50%;
+            }
+
+            h1 {
+                font-size: 62px;
+                margin-bottom: 32px;
+                line-height: 1.1;
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 48px;
+            }
+
+            a:link,
+            a:visited {
+                background-color: #fd7e14;
+                color: white;
+                text-decoration: none;
+                padding: 18px 32px;
+                font-size: 24px;
+                font-weight: bold;
+                border-radius: 12px;
+            }
         </style>
     </head>
-    <body></body>
+    <body>
+        <div class="hero-section">
+            <div class="header">
+                <span>LOGO</span>
+                <nav>NAVIGATION</nav>
+            </div>
+            <div class="hero-section-text">
+                <h1 class="headline">
+                    A healthy meal delivered to your door, every single day
+                </h1>
+                <p>
+                    The smart 365-days-per-year food subscription that will make
+                    you eat healthy again. Tailored to your personal tastes and
+                    nutritional needs.
+                </p>
+                <a href="#">Start eating well</a>
+            </div>
+        </div>
+    </body>
 </html>
