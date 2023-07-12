@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hero Section</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <style>
             /*
             SPACING SYSTEM (px)
@@ -20,78 +26,105 @@
             }
 
             body {
-                background-image: linear-gradient(
-                        rgba(0, 0, 0, 0.4),
-                        rgba(0, 0, 0, 0.4)
-                    ),
-                    url(./hero.jpg);
-                background-size: cover;
-                font-family: sans-serif;
+                font-family: "Rubik", sans-serif;
                 color: white;
+                font-weight: 700;
             }
 
-            .hero-section {
-                width: 75vw;
+            .container {
+                width: 1500px;
                 margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                gap: 200px;
-                justify-content: center;
             }
 
             .header {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 48px;
-                font-weight: bold;
                 font-size: 24px;
+                margin-bottom: 32px;
+                padding: 24px 0;
             }
 
-            .hero-section-text {
-                width: 50%;
+            .hero-section {
+                height: 100vh;
+                display: grid;
+                grid-template-rows: auto 1fr;
+                align-items: center;
+                background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.5)
+                    ),
+                    url(./hero.jpg);
+                background-size: cover;
             }
 
             h1 {
-                font-size: 62px;
-                margin-bottom: 32px;
-                line-height: 1.1;
+                font-size: 52px;
+                margin-bottom: 44px;
             }
-
             p {
+                margin-bottom: 52px;
                 font-size: 24px;
                 font-weight: 500;
-                margin-bottom: 48px;
             }
 
-            a:link,
-            a:visited {
-                background-color: #fd7e14;
-                color: white;
+            .btn:link,
+            .btn:visited {
                 text-decoration: none;
-                padding: 18px 32px;
+                color: white;
+                background-color: #f76707;
                 font-size: 24px;
-                font-weight: bold;
-                border-radius: 12px;
+                display: inline-block;
+                padding: 18px 32px;
+                border-radius: 9px;
+            }
+
+            .section-1 {
+                background-color: #f2f2f2;
+                padding: 44px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100vh;
+                color: black;
+            }
+
+            .hero-section-text {
+                width: 800px;
+                transform: translate(0, -20px);
             }
         </style>
     </head>
     <body>
-        <div class="hero-section">
-            <div class="header">
-                <span>LOGO</span>
+        <section class="hero-section">
+            <div class="header container">
+                <div>LOGO</div>
                 <nav>NAVIGATION</nav>
             </div>
-            <div class="hero-section-text">
-                <h1 class="headline">
-                    A healthy meal delivered to your door, every single day
-                </h1>
-                <p>
-                    The smart 365-days-per-year food subscription that will make
-                    you eat healthy again. Tailored to your personal tastes and
-                    nutritional needs.
-                </p>
-                <a href="#">Start eating well</a>
+            <div class="container">
+                <div class="hero-section-text">
+                    <h1 class="headline">
+                        A healthy meal delivered to your door, every single day
+                    </h1>
+                    <p>
+                        The smart 365-days-per-year food subscription that will
+                        make you eat healthy again. Tailored to your personal
+                        tastes and nutritional needs.
+                    </p>
+                    <a href="#" class="btn">Start eating well</a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="section-1">
+            <div class="container">
+                <h1>Some nice Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima nobis inventore beatae officiis culpa omnis
+                    voluptates iure deserunt est ut facilis hic, obcaecati
+                    excepturi voluptas maxime pariatur facere quae sunt.
+                </p>
+            </div>
+        </section>
     </body>
 </html>
