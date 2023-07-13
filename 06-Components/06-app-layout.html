@@ -7,15 +7,26 @@
     </head>
     <style>
         :root {
-            --purple: #8f00e2;
+            --purple: #5b2be3;
+            --dark-purple: #4418bc;
             --dark-gray: #343a40;
             --light-gray: #ced4da;
+            --red: #ed1b24;
+            --gray: #afb1b8;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        button {
+            border: none;
+            font-size: 18px;
+            padding: 4px 8px;
+            color: white;
+            font-weight: 600;
         }
 
         body {
@@ -47,17 +58,66 @@
         menu {
             background-color: var(--purple);
             grid-column: 2 / -1;
+
+            display: flex;
+            justify-content: space-between;
+            padding-left: 42px;
+            padding-right: 38px;
         }
 
         section,
         aside {
             background-color: var(--light-gray);
         }
+
+        .left-menu button {
+            background-color: var(--dark-purple);
+        }
+
+        .right-menu button {
+            background-color: var(--red);
+        }
+
+        .email-container {
+            width: 75%;
+            padding: 32px 0;
+            background-color: var(--gray);
+        }
+
+        section {
+            overflow: auto;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
     </style>
     <body>
         <nav>Nav</nav>
-        <menu>Menu</menu>
-        <section>Inbox</section>
+        <menu>
+            <div class="left-menu">
+                <button>New</button>
+                <button>Reply</button>
+                <button>Forward</button>
+                <button>Mark unread</button>
+            </div>
+            <div class="right-menu">
+                <button>Trash</button>
+            </div>
+        </menu>
+        <section>
+            <div class="email-container">Email 1</div>
+            <div class="email-container">Email 2</div>
+            <div class="email-container">Email 3</div>
+            <div class="email-container">Email 4</div>
+            <div class="email-container">Email 5</div>
+            <div class="email-container">Email 6</div>
+            <div class="email-container">Email 7</div>
+            <div class="email-container">Email 8</div>
+            <div class="email-container">Email 9</div>
+            <div class="email-container">Email 10</div>
+        </section>
         <main>Email view</main>
         <aside>Additional info</aside>
     </body>
